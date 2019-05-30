@@ -8,5 +8,30 @@
 
 import Foundation
 
-print("Hello, World!")
+class Test {
+    
+    var name: String
+    var surname: String
+    
+    init(name: String, surname: String) {
+        self.name = name
+        self.surname = surname
+    }
+//
+//    init(name: String, surname: String) {
+//        self.name = name
+//        self.surname = surname
+//    }
+}
+
+class newTest: Test {
+    
+    var age: Int
+    
+    init(name: String, surname: String, age: Int) {
+        self.age = age
+        super.init(name: name, surname: surname)
+    }
+    
+}
 
